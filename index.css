@@ -1,0 +1,39 @@
+body{
+	padding:0;
+	margin:0;
+	background:url(../images/bg.jpg);
+        background-color:#FFFFCC;
+        background-size:cover;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+        -webkit-transition:all 3s;
+        -webkit-animation-delay:3s;
+        -webkit-animation:surp 3s;
+        -moz-transition:all 3s;
+        -moz-animation-delay:3s;
+        -moz-animation:surp 3s;
+        -o-transition:all 3s;
+        -o-animation-delay:3s;
+        -o-animation:surp 3s;
+        -ms-transition:all 3s;
+        -ms-animation-delay:3s;
+        -ms-animation:surp 3s;
+        transition:all 3s;
+        animation-delay:3s;
+        animation:surp 3s; 
+        font-family: 'MondaRegular';
+}
+
+@-webkit-keyframes surp{
+        0%{-webkit-transform:scale(0.97,0.97);opacity:0;}   
+}
+
+#wrapper{
+	min-width:960px;
+	height:auto;
+}
+
+
+#fluidMenuBar{
+margin: 30px auto;
+}

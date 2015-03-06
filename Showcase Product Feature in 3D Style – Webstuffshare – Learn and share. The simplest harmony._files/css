@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Dancing Script'), local('DancingScript'), url(http://themes.googleusercontent.com/static/fonts/dancingscript/v4/DK0eTGXiZjN6yA8zAEyM2VhlQWQpSCpzb2Peu3I-Q34.woff) format('woff');
+}
+@font-face {
+  font-family: 'Pontano Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Pontano Sans'), local('PontanoSans-Regular'), url(http://themes.googleusercontent.com/static/fonts/pontanosans/v2/gTHiwyxi6S7iiHpqAoiE3HhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}

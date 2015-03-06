@@ -1,0 +1,955 @@
+/*
+Theme Name: Webstuffshare
+Author: Hidayat Sagita
+Author URI: http://www.webstuffshare.com
+Description: Made only for Webstuffshare
+*/
+
+@font-face {
+	font-family: 'LeagueGothicRegular';
+	src: url('style/fonts/league_gothic-webfont.eot');
+	src: local('League Gothic'), local('LeagueGothic'), url('style/fonts/league_gothic-webfont.woff') format('woff'), url('style/fonts/league_gothic-webfont.ttf') format('truetype'), url('style/fonts/league_gothic-webfont.svg#webfontcVZ3moO1') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'LeagueScriptThinLeagueScript';
+	src: url('style/fonts/leaguescript-webfont.eot');
+	src: local('League Script Thin'), local('LeagueScriptThinLeagueScript'), url('style/fonts/leaguescript-webfont.woff') format('woff'), url('style/fonts/leaguescript-webfont.ttf') format('truetype'), url('style/fonts/leaguescript-webfont.svg#webfontXZg0HxPd') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	margin: 0;
+	background: #e4dfca url('images/background.jpg');
+	text-transform: normal;
+	text-align: center;
+	font-family: "Pontano Sans",Georgia, serif;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: normal;
+	letter-spacing: normal;
+	color: #333333;
+}
+
+a, a:visited {
+	color: #333333;
+	text-decoration: none;
+	border-bottom: 1px dotted #888;
+	-webkit-transition: .3s linear;
+	-moz-transition: .3s linear;
+	-o-transition: .3s linear;
+}
+
+a:hover {
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 0px;
+	text-shadow: 1px 1px 0px rgba(0,0,0,0.3);
+}
+
+#header {
+	display: block;
+	background: #525555 url('images/headerbackground_01.jpg');
+	height: 60px;
+}
+
+	.content-header {
+		margin: 0 auto;
+		display: block;
+		width: 960px;
+		text-align: left;
+	}
+	
+		#topmenu {
+			margin-top: 0;
+			padding: 1em 0 0 0;
+		}
+		
+			#topmenu li {
+				display: inline-block;
+				margin-right: 1em;
+				font-family: LeagueGothicRegular;
+				font-size: 25px;
+				font-weight: lighter;
+			}
+			
+			#topmenu li a {
+				color: #ffffff;
+				text-decoration: none;
+				text-shadow: 1px 2px 2px #000;
+			  	-webkit-transition: .3s linear;
+			  	-moz-transition: .3s linear;
+			  	-o-transition: .3s linear;
+				border-bottom: 0px;
+				font-weight: lighter;
+			}
+			
+			#topmenu li a:hover {
+				text-shadow: -2px -2px 2px #000;
+			}
+			
+			#topmenu li a:active {
+				text-shadow: -0px -0px 10px #000;
+			}
+
+.left {
+	display: block;
+	float: left;
+	width: 640px;
+	margin-right: 20px;
+}
+
+.right {
+	display: block;
+	float: left;
+	width: 300px;
+	text-align: left;
+}
+
+.right-sidebar {
+	margin-top: -.5em;
+}
+
+.cleaner {
+	clear: both;
+}
+
+#subheader {
+	display: block;
+	background: url('images/topbackground.png');
+	height: 211px;	
+}
+
+	.content-subheader {
+		margin: 0 auto;
+		padding-top: 3.5em; 
+		display: block;
+		width: 960px;
+		text-align: left;
+		color: #fff;
+		font-family: LeagueGothicRegular;
+	}
+	
+		.logo {
+			font-size: 55px;
+			letter-spacing: -2px;
+		}
+			
+			.logo a {
+				text-shadow: 1px 5px 0px rgba(0,0,0,0.15);
+				color: #fff;
+				text-decoration: none;
+				border-bottom: 0px;
+				-webkit-transition: .3s linear;
+				-moz-transition: .3s linear;
+				-o-transition: .3s linear;
+			}
+			
+				.logo a:hover {
+					text-shadow: -5px -5px 0px rgba(0,0,0,0.15);
+				}
+		
+		.logo-tagline {
+			line-height: 1.45em;
+			margin: -1em 0 0 .25em;
+			font-size: 22px;
+			font-weight: lighter;
+			text-shadow: 1px 2px 0px rgba(0,0,0,0.15);
+		}
+		
+		.social-network {
+			margin: .5em 0 0 0;
+			font-size: 22px;
+			text-shadow: 1px 2px 0px rgba(0,0,0,0.15);
+			line-height: 2.01em;
+		}
+			
+			a.tiptip, a.tiptip:visited {
+				color: #fff;
+				border: 0px;
+				-webkit-transition: .3s linear;
+				-moz-transition: .3s linear;
+				-o-transition: .3s linear;
+			}
+				
+				a.tiptip:hover {
+					text-shadow: -1px -2px 0px rgba(0,0,0,0.15);
+				}
+			
+			.social-network span {
+				display: inline-block;
+				margin: 0 .5em 0 0;
+			}
+			
+			.button-social {
+				display: inline-block;
+				margin-right: .2em;
+				vertical-align: middle;
+			}
+			
+			.form-subscribe {
+				display: inline;
+			}
+		
+		.form-text {
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;
+			font-family: LeagueGothicRegular;
+			font-weight: lighter;
+			padding: 4px 8px;
+			font-size: 18px;
+			border: 1px solid #fff;
+			color: #333;
+			outline: none;
+			width: 150px;
+			background: #fff;
+		}
+		
+		.form-text-search {
+			width: 200px;
+		}
+		
+		.form-submit {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: .5em 0 0 -1em;
+		}
+
+#content-container {
+	margin: 1em auto 0 auto;
+	display: block;
+	width: 960px;
+}
+
+	.posts {
+		padding: 0 8em 0 0;
+		display: block;
+		margin-bottom: 2em;
+		text-align: left;
+		line-height: 1.45em;
+	}
+		
+		.content-post img {
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;
+			border: 1px solid rgba(255,255,255,0);
+			-webkit-box-shadow: 3px 3px 0px rgba(0,0,0,0.13);
+			-moz-box-shadow: 3px 3px 0px rgba(0,0,0,0.13);
+			box-shadow: 3px 3px 0px rgba(0,0,0,0.13);
+			margin: 1em 0;
+		}
+			
+			.content-post a < img {
+				border: 0px;
+			}
+		
+		.content-post img.wp-smiley {
+			-webkit-border-radius: 0px;
+			-moz-border-radius: 0px;
+			border-radius: 0px;
+			border: 0px;
+			-webkit-box-shadow: 3px 3px 0px rgba(0,0,0,0);
+			-moz-box-shadow: 3px 3px 0px rgba(0,0,0,0);
+			box-shadow: 3px 3px 0px rgba(0,0,0,0);
+			margin: 0;
+		}
+		
+		.content-post ol li{
+			list-style-type: decimal;
+		}
+		
+		.content-post ul li{
+			list-style-type: disc;
+		}
+		
+		a.title {
+			text-decoration: none;
+			border-bottom: 0px;
+		}
+		
+		a.title h1 {
+			font-family: LeagueGothicRegular;
+			font-size: 36px;
+			font-weight: lighter;
+			letter-spacing: -1px;
+			color: #5a5a5a;
+			text-shadow: 2px 2px 0px rgba(0,0,0,0.13);
+			-webkit-transition: .3s linear;
+			-moz-transition: .3s linear;
+			-o-transition: .3s linear;
+		}
+			
+		
+			a.title h1:hover {
+				text-shadow: -2px -2px 0px rgba(0,0,0,0.13);
+			}
+		
+		h1.pagetitle {
+			font-family: LeagueGothicRegular;
+			font-size: 36px;
+			font-weight: lighter;
+			letter-spacing: -1px;
+			color: #5a5a5a;
+			text-shadow: 2px 2px 0px rgba(0,0,0,0.13);
+			-webkit-transition: .3s linear;
+			-moz-transition: .3s linear;
+			-o-transition: .3s linear;
+			margin-bottom: .5em;
+		}
+			
+		
+			h1.pagetitle:hover {
+				text-shadow: -2px -2px 0px rgba(0,0,0,0.13);
+			}
+		
+		.subtitle {
+			display: block;
+			margin: .7em 0 1em 0;
+			font-family: "Dancing Script";
+			/* font-family: LeagueScriptThinLeagueScript; */
+			font-size: 17px;
+			color: #575647;
+		}
+			
+			.subtitle a, .subtitle:visited {
+				color: #000;
+				text-decoration: none;
+				border-bottom: 0px;
+				-webkit-transition: .3s linear;
+				-moz-transition: .3s linear;
+				-o-transition: .3s linear;
+			}
+			
+			.subtitle a:hover {
+				color: #fff;
+				text-shadow: 1px 1px 0px rgba(0,0,0,0.3);
+			}
+		
+		.content-post {
+			margin-top: 2em;
+			line-height: 1.7em;
+		}
+			
+			p {
+				line-height: 1.7em;
+			}
+		
+			.banner-post {
+				-webkit-border-radius: 3px;
+				-moz-border-radius: 3px;
+				border-radius: 3px;
+				border: 1px solid rgba(255,255,255,0);
+				-webkit-box-shadow: 3px 3px 0px rgba(0,0,0,0.13);
+				-moz-box-shadow: 3px 3px 0px rgba(0,0,0,0.13);
+				box-shadow: 3px 3px 0px rgba(0,0,0,0.13);
+				float: left;
+				margin: 0 1.5em .8em 0;
+			}
+			
+		.pagging {
+			display: block;
+			width: 570px;
+			margin: -2.5em 0 5em 0;
+			text-align: left;
+		}
+		
+		.dot-separator {
+			display: block;
+			width: 570px;
+			background: url('images/content_22.png') repeat-x;
+			margin: 2em 0 1em 0;
+			text-align: left;		
+		}
+			
+			.item-pagging, .item-pagging-selected {
+				display: inline-block;
+				margin-right: .2em;
+				background: #5a5a5a;
+				-webkit-border-radius: 20px;
+				-moz-border-radius: 20px;
+				border-radius: 20px;
+				padding-top: 5px;
+				width: 27px;
+				height: 22px;
+				text-align: center;
+				font-family: LeagueGothicRegular;
+				font-weight: lighter;
+				font-size: 18px;
+				-webkit-box-shadow: 1px 2px 0px rgba(0,0,0,0.15);
+				-moz-box-shadow: 1px 2px 0px rgba(0,0,0,0.15);
+				box-shadow: 1px 2px 0px rgba(0,0,0,0.15);
+			  	-webkit-transition: .3s linear;
+			  	-moz-transition: .3s linear;
+			  	-o-transition: .3s linear;
+			  	border: 1px solid rgba(0,0,0,0);
+			}
+			
+			.item-next-prev {
+				line-height: .85em;
+				text-align: center;
+			}
+			
+			.item-pagging:hover, .item-pagging-selected {
+				background: #d6cda4;
+				color: #53524e;
+				cursor: pointer;
+			}
+			
+			.item-pagging:hover > a, .item-pagging-selected a {
+				color: #53524e;
+				text-decoration: none;
+				border-bottom: 0px;
+			}
+			
+				.item-pagging a {
+					color: #fff;
+					text-decoration: none;
+					border-bottom: 0px;
+				}
+	
+		.button-show-implementation {
+			text-indent: -200%;
+			float: left;
+			display: block;
+			width: 99px;
+			height: 103px;
+			background: url('images/single_03.png') top left no-repeat;
+			cursor: pointer;
+			margin: 1em 1em 1em 12em;
+		}
+	
+		.button-show-implementation:hover {
+			text-indent: -200%;
+			display: block;
+			width: 99px;
+			height: 103px;
+			background: url('images/single_03.png') bottom left no-repeat;
+			cursor: pointer;
+			margin: 1em 1em 1em 12em;
+		}
+	
+		.button-download-source {
+			text-indent: -200%;
+			float: left;
+			display: block;
+			width: 105px;
+			height: 106px;
+			background: url('images/single_05.png') top left no-repeat;
+			cursor: pointer;
+			margin: 1em 1em 1em 1em;
+		}
+	
+		.button-download-source:hover {
+			text-indent: -200%;
+			display: block;
+			width: 105px;
+			height: 106px;
+			background: url('images/single_05.png') bottom left no-repeat;
+			cursor: pointer;
+			margin: 1em 1em 1em 1em;
+		}		
+		
+		h3 {
+			font-family: LeagueGothicRegular;
+			font-size: 20px;
+			font-weight: lighter;
+			margin: .5em 0;
+		}
+		
+		h3.floatleft {
+			float: left;
+			margin-right: .5em;
+		}
+		
+		.banner-rss {
+			margin: 4em 0 2em 0;
+		}
+		
+		#commentform {
+			display: block;
+			margin: 2em 0 0 1em;
+		}
+		
+			#commentform p {
+				margin-bottom: 1em;
+			}
+		
+			#commentform label {
+				display: inline-block;
+				padding:5px 0;
+				width: 80px;
+				font-family: LeagueGothicRegular;
+				font-size: 22px;
+				font-weight: lighter;
+				letter-spacing: .02em;
+				text-transform: uppercase;
+				color: #5A5A5A;
+				margin-right: .5em;
+				vertical-align: middle;
+			}
+			
+			#commentform label.colon {
+				width: 2px;
+				margin-right: .5em;
+			}
+
+			#commentform input, #commentform textarea {
+				-webkit-border-radius: 3px;
+				-moz-border-radius: 3px;
+				border-radius: 3px;
+				border: 1px solid #fff;
+				padding: 6px;
+				width: 270px;
+				vertical-align: top;
+				-webkit-box-shadow: 2px 2px 0px rgba(0,0,0,0.13);
+				-moz-box-shadow: 2px 2px 0px rgba(0,0,0,0.13);
+				box-shadow: 2px 2px 0px rgba(0,0,0,0.13);
+				-webkit-transition: .3s linear;
+				-moz-transition: .3s linear;
+				-o-transition: .3s linear;
+			}
+
+			#commentform input:focus, #commentform textarea:focus {
+				-webkit-box-shadow: -1px -1px 0px rgba(0,0,0,0.13);
+				-moz-box-shadow: -1px -1px 0px rgba(0,0,0,0.13);
+				box-shadow: -1px -1px 0px rgba(0,0,0,0.13);			
+			}
+
+			#commentform textarea {
+				width: 370px;
+				font-family:Arial, Helvetica, sans-serif;
+				font-size:13px;
+			}
+
+			#commentform input[type="image"]{
+				width:62px;
+				height:63px;
+				-webkit-box-shadow: 0px 0px 0px rgba(0,0,0,0);
+				-moz-box-shadow: 0px 0px 0px rgba(0,0,0,0);
+				box-shadow: 0px 0px 0px rgba(0,0,0,0);
+				border: 0;
+				margin-left: 9em;
+			}	
+		
+			#commentform .wpcf7-submit {
+				text-indent: -200%;
+				display: block;
+				width: 62px;
+				height: 63px;
+				background: url('images/single_20.png') bottom left no-repeat;
+				cursor: pointer;
+				margin: 1em 1em 0em 10em;
+				-webkit-box-shadow: 0px 0px 0px rgba(0,0,0,0);
+				-moz-box-shadow: 0px 0px 0px rgba(0,0,0,0);
+				box-shadow: 0px 0px 0px rgba(0,0,0,0);
+				border: 0px;
+			}
+			
+		ul.commentlist {
+			list-style:none;
+			list-style-position:outside;
+			display:block;
+			margin:0 0 20px;
+			padding:0;
+			padding-bottom:10px;
+		}
+
+			ul.commentlist ul {
+				list-style-type:none;
+				list-style-position:outside;
+				margin:0;
+			}
+
+				ul.commentlist li {
+					padding:20px 0 10px 50px;
+					position:relative;
+					margin-top:0;
+					background:url('images/content_22.png') bottom left repeat-x;
+				}
+
+					ul.commentlist li img {
+						border:none;
+					}
+
+					ul.commentlist li p{
+						font-size:13px;
+						margin:10px 0;
+					}
+					
+					ul.commentlist li p.sidebar-title{
+						font-size: 30px;
+					}
+					
+					.comment-author {
+						display: block;
+						font-family: LeagueGothicRegular;
+						font-size:18px;
+						text-transform: uppercase;
+						color: #333;
+						font-weight: lighter;
+						border: 0px;
+					}
+						
+						.comment-author a {
+							border: 0px;
+						}
+					
+					.comment-time {
+						display: block;
+						font-family: "Dancing Script";
+						/* font-family: LeagueScriptThinLeagueScript; */
+						font-size: 14px;
+						color: #575647;
+						margin: .3em 0;
+					}
+					
+					.nocomments {
+						display: block;
+						font-family: "Dancing Script";
+						/* font-family: LeagueScriptThinLeagueScript; */
+						font-size:25px;
+						color: #575647;
+						margin: 0 0 1em 0.3em;
+					}
+					
+					.cancel-comment-reply {
+						margin-left: 1em;
+					}
+					
+					.reply-image {
+						float: left;
+						margin-right: .3em;
+					}
+
+					ul.commentlist li .comment-meta, ul.commentlist li .text  {
+						margin-left:20px;	
+					}		
+
+					ul.commentlist li .comment-meta {
+					}
+
+					ul.commentlist li .gravatar {
+						position:absolute;
+						width:50px;
+						height:50px;
+						top:20px;
+						left:0;
+					}
+						
+						ul.commentlist li .gravatar img {
+							-webkit-border-radius: 50px;
+							-moz-border-radius: 50px;
+							border-radius: 50px;
+							border: 1px solid rgba(255,255,255,0);
+							-webkit-box-shadow: 2px 2px 0px rgba(0,0,0,0.13);
+							-moz-box-shadow: 2px 2px 0px rgba(0,0,0,0.13);
+							box-shadow: 2px 2px 0px rgba(0,0,0,0.13);
+						}
+
+			ul.commentlist .reply {
+				display: block;
+				font-family: LeagueGothicRegular;
+				font-size:18px;
+				margin: 1em 0 1em 1em;
+				text-transform: uppercase;
+			}
+
+				ul.commentlist .reply a {
+					display:block;
+					border: 0px;
+					color:#333;
+				}
+
+					ul.commentlist .reply a:hover {
+						text-decoration:none;
+						color:#fff;
+						border: 0px;
+					}
+
+			ul.commentlist li .children li {
+				margin-top:15px;
+				padding-top:25px;
+				border-bottom:none;
+				overflow:hidden;
+				padding-bottom:5px;
+			}
+				
+				ul.children li {
+					background:url('images/content_22.png') top left repeat-x;
+				}
+
+				ul.commentlist li .children li .gravatar {
+					top:20px;
+				}	
+
+				ul.commentlist li .children li .reply {
+					top:30px;	
+				}	
+
+		
+		.profile-sidebar {
+			display: block;
+			margin-bottom: 1em;
+			line-height: 1.7em;
+		}
+		
+		.sidebar {
+			display: block;
+			margin-bottom: 3em;
+			line-height: 1.7em;
+		}
+		
+		.sidebar-search {
+			line-height: 2.7em;
+			display: block;
+			margin-bottom: 3em;
+		}
+		
+			.sidebar-title {
+				font-family: LeagueGothicRegular;
+				font-size: 30px;
+				font-weight: lighter;
+				text-transform: uppercase;
+				color: #5a5a5a;
+				text-shadow: 2px 2px 0px rgba(0,0,0,0.13);
+				margin-bottom: .8em;
+				line-height: 1.2em;
+			}
+			
+				.sidebar-title img {
+					vertical-align: bottom;
+					margin-right: .2em;
+				}
+			
+			.big-avatar {
+				float: left;
+				margin: 0 1em 0 0;
+			}
+			
+			.text-artist {
+				margin-top: 2.5em;
+			}
+			
+			.sidebar-list li {
+				list-style-type: none;
+				display: block;
+				height: 60px;
+				width: 300px;
+				margin-bottom: 1em;
+				background: url('images/content_22.png') bottom center no-repeat;
+			}
+			
+			.sidebar-list-cn li {
+				list-style-type: none;
+				display: block;
+				width: 300px;
+				margin-bottom: 1em;
+				padding-bottom: 1em;
+				background: url('images/content_22.png') bottom center no-repeat;
+			}
+				
+				.sidebar-list a, .sidebar-list-cn a {
+					color: #333;
+					text-decoration: none;
+					-webkit-transition: .3s linear;
+					-moz-transition: .3s linear;
+					-o-transition: .3s linear;
+					border-bottom: 0px;
+				}
+				
+				.sidebar-list a:hover, .sidebar-list-cn a:hover {
+					color: #000;
+					text-shadow: 1px 1px 1px rgba(248,246,237,.8);
+				}
+			
+				.sidebar-list-image {
+					margin: 0 1em 0 .5em;
+					float: left;
+					-webkit-border-radius: 36px;
+					-moz-border-radius: 36px;
+					border-radius: 36px;
+					border: 1px solid rgba(255,255,255,0);
+					-webkit-box-shadow: 2px 2px 0px rgba(0,0,0,0.13);
+					-moz-box-shadow: 2px 2px 0px rgba(0,0,0,0.13);
+					box-shadow: 2px 2px 0px rgba(0,0,0,0.13);
+				}
+				
+				.sidebar-list-title {
+					font-size: 13px;
+					display: block;
+				}
+				
+				.sidebar-list-comment {
+					font-style: italic;
+					color: #8a8a8a;
+				}
+			
+			.wp-tag-cloud li {
+				display: inline-block;
+				background: url('images/tags_30.png') top left no-repeat;
+				height: 24px;
+				padding-left: 23px;
+				margin: 0 .2em .7em 0;
+				line-height: 1.8em;
+			}
+			
+			.tag-on-content {
+				padding-top: .6em;
+			}
+			
+				.wp-tag-cloud li a {
+					display: inline-block;
+					border-bottom: 0px;
+					background: url('images/tags_31.png') top right no-repeat;
+					height: 24px;
+					padding-right: 13px;
+					color: #53524e;
+					text-decoration: none;
+					text-shadow: 1px 1px 0px rgba(248,246,237,.5);
+					-webkit-transition: .3s linear;
+					-moz-transition: .3s linear;
+					-o-transition: .3s linear;
+				}
+					
+					.wp-tag-cloud li a:hover {
+						text-shadow: 1px 1px 0px rgba(83,82,78,.5);
+						color: #f8f6ed;
+					}
+			
+			.rope {
+				display: block;
+				background: url('images/content_22.png') repeat-x;
+				width: 300px;
+				margin-top: .5em;
+				text-align: center;
+				padding-top: .1em;
+				overflow: hidden;
+			}
+			
+				.rope img {
+					margin-top: -2em;
+					cursor: pointer;
+				}
+		
+	.footer {
+		display: block;
+		margin-bottom: 2em;
+		text-align: left;
+		font-family: LeagueGothicRegular;
+		font-size: 17px;
+		color: #5a5a5a;
+		text-transform: uppercase;
+	}
+	
+		.thickline {
+			border-top: 5px solid #737373;
+			border-bottom: 0;
+			border-left: 0;
+			border-right: 0;
+		}
+	
+		.thinline {
+			margin: -.4em 0 .8em 0;
+			border-top: 1px solid #737373;
+			border-bottom: 0;
+			border-left: 0;
+			border-right: 0;
+		}
+		
+		.wplove {
+			float: left;
+			margin-right: 1em;
+		}
+		
+		.footercopyright {
+			padding-top: .4em;
+			line-height: 1.1em;
+		}
+		
+	div.delic-wide {
+		display: inline-block;
+	}
+	
+	div.delic-wide a.count:active, div.delic-wide a.count:hover, div.delic-wide a.count {
+		background: url('images/delicious-background.jpg') top left repeat-x;
+		border-color: #2d6cc3;
+	}
+	
+	.tag-bookmark {
+		display: block;
+		width: 600px;
+	}
+	
+/* ADS STYLING */
+.adsatt, .adsatt a {
+	color: #833A00;
+}
+		
+		.ads-sidebar {
+			display: block;
+			position:relative;
+			margin-top: 2em;
+			margin-bottom: 3em;
+			width: 305px;
+		}
+		
+		.ads-below-post {
+			display: block;
+			margin: 2em auto 2em auto;
+			width: 468px;
+			height: 60px;
+			background: rgba(255,255,255,0.2);
+		}
+		
+		.ads-home {
+			display: block;
+			width: 468px;
+			height: 60px;
+			margin: -1em auto 3em auto;
+			background: rgba(255,255,255,0.2);
+		}
+		
+		.ads-inside {
+			display: block;
+			text-align: center;
+			margin: 1em 0;
+		}
+		
+		.carbonad {
+			background: rgba(255,255,255,0.3) !important;
+			border: none !important;
+			border-radius: 3px;
+		}
+		
+		#md-large-widget a,
+		#md-large-widget a:visited,
+		.recent-deal-title a,
+		.recent-deal-title a:visited {
+			border: none !important;
+		}
+		
+		.md-wg-deal-link,
+		#md-wg-timer-block {
+			display: block;
+			text-align: center;
+		}
+		
+		.recent-deal-wrap {
+			width: 160px !important;
+		}
+		
+		.recent-deal-image {
+			width: 160px !important;
+			height: 160px !important;
+		}
+		
+		.all-deals {
+			text-align: right;
+			display: block;
+			border: none;
+		}

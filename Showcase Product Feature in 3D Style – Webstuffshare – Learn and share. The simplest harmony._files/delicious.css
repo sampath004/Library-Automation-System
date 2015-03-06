@@ -1,0 +1,86 @@
+/******** Wide Button ********/
+div.delic-wide{
+font-family:Arial,Tahoma;
+font-size:11px;
+width:76px;
+}
+/******** Wide Button > links ********/
+div.delic-wide a.icon,div.delic-wide a.count{
+display:block;
+float:left;
+line-height:18px;
+border:#666 solid 1px;
+-webkit-border-radius:3px;
+-moz-border-radius:3px;
+margin-right:1px;
+outline: none!important;
+text-decoration:none!important;
+height:18px;
+overflow:hidden;
+color:#FFF!important
+}
+/******** Wide Button > icon********/
+div.delic-wide	a.icon{
+background:#fff;
+border-color:#ccc;
+width:20px;
+position:relative;
+direction:ltr;
+}
+div.delic-wide	a.icon:hover{
+border-color:#666
+}
+/******** Wide Button > Count/Save********/
+div.delic-wide a.count{
+font-size:12px;
+background: url('../images/delicious-background.jpg') top left repeat-x;
+border-color: #2d6cc3;
+width:50px;
+text-align:center;
+text-shadow:#2A5580 1px 1px 0
+}
+div.delic-wide a.count:hover{
+background: url('../images/delicious-background.jpg') top left repeat-x;
+border-color: #2d6cc3;
+text-shadow:#369 1px 1px 0
+}
+div.delic-wide a.count:active{
+background: url('../images/delicious-background.jpg') top left repeat-x;
+border-color: #2d6cc3;
+text-shadow:#222 1px 1px 0
+}
+/******** Logo ********/
+div.delic-tall a.icon:hover *, div.delic-wide a.icon:hover *{
+opacity:0.85;
+filter:alpha(opacity=85)
+} 
+
+div.delic-tall a.icon *,div.delic-wide a.icon *{
+width:50%;
+height:50%;
+position:absolute;
+margin:0!important;
+}
+div.delic-tall h1, div.delic-wide h1{ 
+background:#3274D0;
+left:50%;
+top:0
+}
+div.delic-tall h2, div.delic-wide h2{ 
+background:#000;
+left:0;
+top:50%;
+}
+div.delic-tall h3, div.delic-wide h3{ 
+background:#D3D2D2;
+left:50%;
+top:50%;
+}
+/******** Hide save text ********/
+div.delic-tall a.count i,div.delic-wide a.count i{
+display:none;
+font-style:normal
+}
+div.delic-tall a.count b,div.delic-wide a.count b{
+font-weight:normal
+}
